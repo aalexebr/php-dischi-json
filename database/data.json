@@ -13,5 +13,10 @@
         "album": "G", 
         "author": "H", 
         "release_date": "005" 
+    },
+    { 
+        "album": "Z", 
+        "author": "X", 
+        "release_date": "009" 
     }
 ]
