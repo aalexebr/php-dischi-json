@@ -10,7 +10,15 @@
 <body>
     <div id="app">
         <main>
-            {{ message }}
+            <ul>
+                <li v-for="(element, i) in axiosData" :key="i">
+                    <ol>
+                        <li v-for="(value,j) in element" :key="j">
+                            {{value}}
+                        </li>
+                    </ol>
+                </li>
+            </ul>
         </main>
         
     </div>
