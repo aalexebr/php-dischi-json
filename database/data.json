@@ -1,22 +1,38 @@
 [
     { 
-        "album": "A", 
-        "author": "B", 
-        "release_date": "001" 
+        "album": "The Dark Side of the Moon", 
+        "author": "Pink Floyd", 
+        "release_date": "1973",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/c/c7/The_Dark_Side_of_the_Moon_Cover.svg"
     },
     { 
-        "album": "C", 
-        "author": "D", 
-        "release_date": "002" 
+        "album": "Appetite For Destruction", 
+        "author": "Guns n' Roses", 
+        "release_date": "1987",
+        "img":"https://upload.wikimedia.org/wikipedia/en/6/60/GunsnRosesAppetiteforDestructionalbumcover.jpg"
     },
     { 
-        "album": "G", 
-        "author": "H", 
-        "release_date": "005" 
+        "album": "Who's Next", 
+        "author": "The Who", 
+        "release_date": "1971",
+        "img":"https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Whosnext.jpg/220px-Whosnext.jpg"
     },
     { 
-        "album": "Z", 
-        "author": "X", 
-        "release_date": "009" 
+        "album": "The Rise & Fall of Ziggy Stardust & the Spiders from Mars", 
+        "author": "David Bowie", 
+        "release_date": "009",
+        "img":"https://upload.wikimedia.org/wikipedia/en/0/01/ZiggyStardust.jpg"
+    },
+    { 
+        "album": "Ace of Spades", 
+        "author": "Motörhead", 
+        "release_date": "009",
+        "img":"https://upload.wikimedia.org/wikipedia/it/3/3f/Ace_Of_Spades.jpg"
+    },
+    { 
+        "album": "Master of Puppets", 
+        "author": "Metallica", 
+        "release_date": "009",
+        "img":"https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg"
     }
 ]

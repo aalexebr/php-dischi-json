@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- axios and vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
     <title>PHP Dischi JSON</title>
 </head>
-<body>
+<body class="debug">
     <div id="app">
         <main>
             <ul>
@@ -19,6 +22,36 @@
                     </ol>
                 </li>
             </ul>
+            <div class="container">
+                <div class="row wrap space-around">
+                    <div class="col-3" v-for="(element, i) in axiosData" :key="i">
+                        <div class="card">
+                            <div class="img">
+                                <img :src="element['img']" alt="">
+                            </div>
+                            <div class="text-center">
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            {{element['album']}}
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            {{element['author']}}
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <h5>
+                                            {{element['release_date']}}
+                                        </h5>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         
     </div>
