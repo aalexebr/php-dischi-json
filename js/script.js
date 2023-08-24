@@ -7,16 +7,19 @@ const { createApp } = Vue
         axiosData:[],
         clickCardFlag: false,
         // closeOverlayFlag: false,
+        currentCardIndex: 0,
       }
     },
     methods:{
         clickCard(i){
             this.clickCardFlag = !this.clickCardFlag
             console.log(this.clickCardFlag,i)
+            this.currentCardIndex = i
         },
         closeOverlay(){
             this.clickCardFlag= !this.clickCardFlag
             console.log(this.clickCardFlag,'overlayflag',this.closeOverlayFlag,'x flag')
+            this.currentCardIndex = 0
         }
     },
     created(){

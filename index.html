@@ -53,9 +53,36 @@
                 </div>
             </div>
             <div class="overlay pos-absolute d-none" :class="{'display': clickCardFlag, 'd-none':clickCardFlag}">
-                <div class="pos-absolute close-overlay" @click="closeOverlay()">
+                
+                <div class="pos-absolute close-overlay" @click="closeOverlay">
                     x
                 </div>
+                <!-- <div class="row"> -->
+                    <div class="card-overlay pos-absolute" v-if="axiosData.length != 0">
+                        <div class="img">
+                            <img :src="axiosData[currentCardIndex]['img']" alt="">
+                        </div>
+                        <div class="text-center">
+                            <ul>
+                                <li>
+                                    <h3>
+                                        {{axiosData[currentCardIndex]['album']}}
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h4>
+                                        {{axiosData[currentCardIndex]['author']}}
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h5>
+                                        {{axiosData[currentCardIndex]['release_date']}}
+                                    </h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <!-- </div> -->
             </div>
         </main>
         
