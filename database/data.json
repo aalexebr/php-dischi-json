@@ -1,0 +1,17 @@
+[
+    { 
+        "album": "A", 
+        "author": "B", 
+        "release_date": "001" 
+    },
+    { 
+        "album": "C", 
+        "author": "D", 
+        "release_date": "002" 
+    },
+    { 
+        "album": "G", 
+        "author": "H", 
+        "release_date": "005" 
+    }
+]
