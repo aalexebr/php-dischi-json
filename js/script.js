@@ -4,8 +4,20 @@ const { createApp } = Vue
     data() {
       return {
         message: 'Hello Vue!',
-        axiosData:[]
+        axiosData:[],
+        clickCardFlag: false,
+        // closeOverlayFlag: false,
       }
+    },
+    methods:{
+        clickCard(i){
+            this.clickCardFlag = !this.clickCardFlag
+            console.log(this.clickCardFlag,i)
+        },
+        closeOverlay(){
+            this.clickCardFlag= !this.clickCardFlag
+            console.log(this.clickCardFlag,'overlayflag',this.closeOverlayFlag,'x flag')
+        }
     },
     created(){
         axios.get('http://localhost/php-dischi-json/api.php',{})

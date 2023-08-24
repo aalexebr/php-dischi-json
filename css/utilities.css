@@ -42,7 +42,7 @@
     flex-direction: column;
     height: 100%;
 }
-.display-none{
+.d-none{
     display: none;
 }
 .display{
@@ -56,6 +56,9 @@
 }
 .text-center{
     text-align: center;
+}
+.container{
+    max-width: 1000px;
 }
 
 

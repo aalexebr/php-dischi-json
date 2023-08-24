@@ -12,8 +12,8 @@
 </head>
 <body class="debug">
     <div id="app">
-        <main>
-            <ul>
+        <main class="pos-relative">
+            <!-- <ul>
                 <li v-for="(element, i) in axiosData" :key="i">
                     <ol>
                         <li v-for="(value,j) in element" :key="j">
@@ -21,11 +21,11 @@
                         </li>
                     </ol>
                 </li>
-            </ul>
+            </ul> -->
             <div class="container">
                 <div class="row wrap space-around">
                     <div class="col-3" v-for="(element, i) in axiosData" :key="i">
-                        <div class="card">
+                        <div class="card" @click="clickCard(i)">
                             <div class="img">
                                 <img :src="element['img']" alt="">
                             </div>
@@ -50,6 +50,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="overlay pos-absolute d-none" :class="{'display': clickCardFlag, 'd-none':clickCardFlag}">
+                <div class="pos-absolute close-overlay" @click="closeOverlay()">
+                    x
                 </div>
             </div>
         </main>
